@@ -20,7 +20,7 @@ class Liquidity:
         np.random.seed(12345)
 
         # TODO: create a variable called self.__list_prices that calls the np.random that Sebastien mentioned
-        self.__list_prices = list(np.random.uniform(low=12.5, high=14.5, size=(500,)))
+        self.__list_prices = list(np.random.uniform(low=12.5, high=14.5, size=(50,)))
 
         self.__balance = 0.0
         self.__cp = 0.0

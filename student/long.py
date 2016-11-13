@@ -70,10 +70,9 @@ class Long():
                     # TODO: make sure to sent self.__is_buy to False
                     self.__current_price = price
                     self._sell()
-                else:
+                elif not self.__is_buy:
                     # TODO: the moving average variable you have pass it in with the price to check_increase
                     self.check_increase(ma, price)
-                    pass
 
             except Exception as error:
                 print("LONG Receive Error: {0}".format(error))
