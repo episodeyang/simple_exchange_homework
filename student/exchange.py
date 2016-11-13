@@ -46,7 +46,7 @@ class ExchangeReceiver(socketserver.BaseRequestHandler):
                     ready_to_read, ready_to_write, in_error = select.select([self.request], [], [], POLL_TIMEOUT)
                     if len(ready_to_read) == 1 and ready_to_read[0] == self.request:
                         current_price = float(self.request.recv(SR_BYTES).decode())
-                        cprint('getting price from ' + c('Sir Liquidity ', 'green') + c("{}".format(current_price), 'grey'))
+                        cprint(c('Exchange', 'grey') + ' got price from ' + c('Sir Liquidity ', 'green') + c("{}".format(current_price), 'grey'))
                     if len(ready_to_write) == 1 and ready_to_write[0] == self.request:
                         cprint('ready to write', 'red')
 
