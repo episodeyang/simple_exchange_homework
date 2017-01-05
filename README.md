@@ -1,8 +1,12 @@
 # Simple Exchange
 
-To execute, run
+You need to install `termcolor` module first to see the pretty colors!
 ```shell
-python3 app.py
+pip install termcolor
+```
+Now to execute, execute the `app.py` script in the `./student` folder:
+```shell
+python3 ./student/app.py
 ```
 
 the output result should look like thie following:
